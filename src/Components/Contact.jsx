@@ -74,8 +74,8 @@ function Contact({ contactRef, on }) {
               required
             ></textarea>
             <button
-              className={`cursor-pointer backdrop-blur-md bg-white/30 rounded-md py-2 active:scale-95 duration-100 hover:bg-white hover:text-black ${
-                on ? "" : "bg-slate-800 hover:bg-slate-800 hover:text-white"
+              className={`cursor-pointer backdrop-blur-md bg-white/30 rounded-md py-2 active:scale-95 duration-100  ${
+                on ? "bg-slate-800 hover:bg-white hover:text-black " : "bg-slate-500 hover:bg-slate-800 "
               }`}
             >
               Send
