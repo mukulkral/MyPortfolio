@@ -1,18 +1,22 @@
 import React from "react";
 
-function About({ aboutRef }) {
+function About({ aboutRef, on }) {
   return (
     <>
       <div
         ref={aboutRef}
-        className="bg-slate-900 text-white p-10 pt-32  md:pt-40 md:px-40"
+        className={` p-10 pt-32  md:pt-40 md:px-40 duration-500 ${
+          on ? "bg-slate-900 text-white" : ""
+        }`}
       >
-        <h2 className=" font-bold text-[30px] sm:text-[40px]  bg-slate-600 duration-200 rounded-md inline-block px-5">
+        <h2
+          className={`font-bold text-white text-[30px] sm:text-[40px]  bg-slate-600 duration-200 rounded-md inline-block px-5 `}
+        >
           About
         </h2>
         <br />
         <br />
-        <p className="text-[12px] sm:text-[15px] md:text-[20px]" >
+        <p className="text-[12px] sm:text-[15px] md:text-[20px]">
           Hello, I'm{" "}
           <b>
             <u>Mukul Singh Kral</u>

@@ -3,7 +3,7 @@ export default {
   content: [
     "./index.html",
     "./src/Components/*.jsx",
-  ],
+  ], 
   theme: {
     extend: {
       animation:{

@@ -1,11 +1,13 @@
 import React from "react";
 
-function Contact({ contactRef }) {
+function Contact({ contactRef, on }) {
   return (
     <>
       <div
         ref={contactRef}
-        className="h-full bg-slate-900 text-white p-10 pt-32  md:pt-40 md:px-40"
+        className={`duration-500 h-full text-white p-10 pt-32  md:pt-40 md:px-40 ${
+          on ? " bg-slate-900" : ""
+        }`}
       >
         <h2 className="font-bold text-[30px] lg:text-[40px]  bg-slate-600 duration-200 rounded-md inline-block px-5">
           Contact Me
@@ -30,7 +32,11 @@ function Contact({ contactRef }) {
             sm:py-[40px]"
             >
               <a href="https://github.com/mukulkral" target="_blank">
-                <i class="fa-brands fa-github text-[50px] hover:scale-150 duration-200 cursor-pointer"></i>
+                <i
+                  class={`fa-brands fa-github text-[50px] hover:scale-150 duration-200 cursor-pointer ${
+                    on ? "" : "text-black"
+                  }`}
+                ></i>
               </a>
               <br />
               <p>https://github.com/mukulkral</p>
@@ -67,7 +73,11 @@ function Contact({ contactRef }) {
               className="h-full px-5 py-3 bg-transparent border-2 rounded-md"
               required
             ></textarea>
-            <button className="cursor-pointer backdrop-blur-md bg-white/30 rounded-md py-2 active:scale-95 duration-100 hover:bg-white hover:text-black">
+            <button
+              className={`cursor-pointer backdrop-blur-md bg-white/30 rounded-md py-2 active:scale-95 duration-100 hover:bg-white hover:text-black ${
+                on ? "" : "bg-slate-800 hover:bg-slate-800 hover:text-white"
+              }`}
+            >
               Send
             </button>
           </form>
