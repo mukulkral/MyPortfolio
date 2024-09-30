@@ -37,7 +37,7 @@ function Navbar() {
       >
         <div
           className={`h-20 w-100  shadow-2xl flex justify-between items-center duration-500 ${
-            on ? "bg-slate-900 text-white" : "bg-white text-black"
+            on ? "bg-slate-900 text-white" : "bg-white text-black "
           }`}
         >
           <img
@@ -48,14 +48,14 @@ function Navbar() {
 
           <div className="">
             <ul
-              className="hidden md:flex justify-between gap-0 p-4 text-xl md:text-[15px] lg:text-2xl
-             "
+              className={`hidden md:flex justify-between gap-0 p-4 text-xl md:text-[15px] lg:text-2xl
+        `}
             >
               <div
                 onClick={() => {
                   handleScroll(firstPageRef);
                 }}
-                className="cursor-pointer px-6 py-2 rounded-full hover:bg-slate-600 duration-200"
+                className="cursor-pointer px-6 py-2 rounded-full hover:bg-slate-600 duration-200 hover:text-white"
                 // style={({ isActive }) => ({
                 //   background: isActive ? "" : "",
                 //   borderBottom: isActive ? "2px solid white" : "",
@@ -67,7 +67,7 @@ function Navbar() {
                 onClick={() => {
                   handleScroll(aboutRef);
                 }}
-                className="cursor-pointer px-6 py-2 rounded-full hover:bg-slate-600 duration-200"
+                className="cursor-pointer px-6 py-2 rounded-full hover:bg-slate-600 duration-200 hover:text-white" 
                 // style={({ isActive }) => ({
                 //   color: isActive ? "#fff" : "",
                 //   background: isActive ? "" : "",
@@ -80,7 +80,7 @@ function Navbar() {
                 onClick={() => {
                   handleScroll(projectsRef);
                 }}
-                className=" cursor-pointer px-6 py-2 rounded-full hover:bg-slate-600 duration-200"
+                className=" cursor-pointer px-6 py-2 rounded-full hover:bg-slate-600 duration-200 hover:text-white"
                 // style={({ isActive }) => ({
                 //   color: isActive ? "#fff" : "",
                 //   background: isActive ? "" : "",
@@ -91,7 +91,7 @@ function Navbar() {
               </div>
               <div
                 onClick={() => handleScroll(contactRef)}
-                className="cursor-pointer px-6 py-2 rounded-full hover:bg-slate-600 duration-200"
+                className="cursor-pointer px-6 py-2 rounded-full hover:bg-slate-600 duration-200 hover:text-white"
                 // style={({ isActive }) => ({
                 //   color: isActive ? "#fff" : "",
                 //   background: isActive ? "" : "",
@@ -100,7 +100,7 @@ function Navbar() {
               >
                 <li>Contact</li>
               </div>
-              <div className=" cursor-pointer px-6 py-2 rounded-full hover:bg-slate-600 duration-200 flex gap-3 flex-nowrap">
+              <div className=" cursor-pointer px-6 py-2 rounded-full hover:bg-slate-600 duration-200 flex gap-3 flex-nowrap hover:text-white">
                 <li className="flex gap-2">
                   <a
                     href="MukulKralResume.pdf"
