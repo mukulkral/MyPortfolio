@@ -18,7 +18,7 @@ function Menubar({
         }`}
       >
         <div className="">
-          <ul className="flex flex-col gap-5 p-4  text-[15px] sm:text-4xl text-pink-500 font-bold font-mono ">
+          <ul className="flex flex-col gap-5 p-4  text-[25px] sm:text-4xl text-orange-500/80 font-sans ">
             <li
               className="cursor-pointer rounded-sm px-16 text-center transition-all duration-300 ease-in-out hover:bg-slate-300/20"
               onClick={() => handleScroll(firstPageRef)}
@@ -53,10 +53,10 @@ function Menubar({
                 <button className="text-nowrap">Download CV</button>
               </a>
             </li>
-            <li>
+            <li className="flex justify-center items-center">
               <div
                 onClick={() => handleON()}
-                className={`flex items-center cursor-pointer bg-white w-[120px] h-[50px] rounded-tr-[150px] rounded-br-[150px] rounded-tl-[150px] rounded-bl-[150px] p-2 shadow-inner shadow-gray-700 border-4 duration-500 md:w-[90px] absolute left-[40%]`}
+                className={`flex items-center cursor-pointer bg-white w-[120px] h-[50px] rounded-tr-[150px] rounded-br-[150px] rounded-tl-[150px] rounded-bl-[150px] p-2 shadow-inner shadow-gray-700 border-4 duration-500 md:w-[90px]`}
               >
                 <div
                   className={`flex justify-center items-center text-[10px] text-white h-[30px] w-[30px] rounded-full shadow-inner cursor-pointer duration-200 md:h-[25px] md:w-[25px] ${
