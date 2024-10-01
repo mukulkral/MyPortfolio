@@ -1,4 +1,5 @@
 import React from "react";
+import ContactButton from "./ContactButton";
 
 function Firstpage({ firstPageRef, on }) {
   return (
@@ -62,6 +63,7 @@ function Firstpage({ firstPageRef, on }) {
           />
         </div>
       </div>
+      <ContactButton/>
     </>
   );
 }

@@ -22,8 +22,8 @@ function About({ aboutRef, on }) {
             <u>Mukul Singh Kral</u>
           </b>
           , a passionate and creative Front-end React Developer based in
-          Gurugram, Harayana. I have a strong background in web development and
-          a deep love for design. I am dedicated to creating user-friendly and
+          Gurugram, Haryana. I have a strong background in web development and a
+          deep love for design. I am dedicated to creating user-friendly and
           visually appealing web experiences. Throughout my career, I've had the
           privilege of working on a variety of exciting projects, from building
           responsive e-commerce websites to developing interactive web
