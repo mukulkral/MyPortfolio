@@ -5,7 +5,7 @@ const ContactButton = () => {
   const phoneNumber = "+918441882493";
   return (
     <>
-      <div className="fixed right-5 bottom-5 flex flex-col gap-5 z-20">
+      <div className="fixed right-5 bottom-20  flex flex-col gap-5 z-20">
         <a
           href={`tel:${phoneNumber}`}
           className=" bg-white/10 rounded-full h-20 w-20 z-10 flex justify-center items-center cursor-pointer backdrop-blur-[1px]"
