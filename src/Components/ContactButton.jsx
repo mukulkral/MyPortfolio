@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactButton = () => {
   const whatsappNumber = "918441882493";
-  const phoneNumber = "918441882493";
+  const phoneNumber = "+918441882493";
   return (
     <>
       <div className="fixed right-5 bottom-5 flex flex-col gap-5 z-20">
